@@ -1,0 +1,14 @@
+.projectContainer {
+  width: 60vw;
+  margin-left: 20vw;
+  display: flex;
+  padding-top: 50px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  justify-content: center;
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+  }
+}
