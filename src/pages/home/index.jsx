@@ -3,6 +3,7 @@ import Introduce from "../../components/introduce/introduce.jsx";
 import Project from "../../components/project/project.jsx";
 import Header from "../../components/header/index.jsx";
 import Bar from "../../components/bar/index.jsx";
+import "./index.scss";
 
 export default function Home() {
   const projects = [
@@ -44,6 +45,7 @@ export default function Home() {
       <Header />
       <Introduce />
       <div
+        className="line"
         style={{
           width: "80vw",
           borderBottom: "1px solid rgb(212, 212, 212)",
@@ -53,6 +55,7 @@ export default function Home() {
         }}
       ></div>
       <div
+        className="welcome"
         style={{
           color: "rgb(246, 9, 81)",
           textAlign: "center",
@@ -63,6 +66,7 @@ export default function Home() {
         WELCOME TO MY PORTFOLIO
       </div>
       <div
+        className="explore"
         style={{
           fontSize: "2rem",
           textAlign: "center",
@@ -95,11 +99,20 @@ export default function Home() {
       ))}
       <Project />
       <div
+        className="footer"
         style={{
           height: "100px",
           width: "100vw",
+          display: "flex",
+          justifyContent: "center",
+          paddingTop: "30px",
+          paddingBottom: "20px",
+          gap: "20px",
         }}
-      ></div>
+      >
+        <div>TEL: +1(408)-382-9900</div>
+        <div>Email: wyujia@umich.edu</div>
+      </div>
     </div>
   );
 }

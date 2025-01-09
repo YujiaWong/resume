@@ -1,0 +1,43 @@
+.homeContainer {
+  .line {
+  }
+  .welcome {
+  }
+  .explore {
+  }
+  .projectContainer {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    .left {
+      h3 {
+      }
+      .text {
+      }
+      a {
+      }
+    }
+    .right {
+      a {
+      }
+      img {
+        @media (max-width: 768px) {
+          width: 350px;
+        }
+      }
+    }
+  }
+  .footer {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+    }
+  }
+}
